@@ -122,7 +122,6 @@ sx={{
     color:'#fff',
     fontSize:'48px',
     lineHeight:'60px',
-    color:'#fff',
     textAlign:{
         xs:'left',
         md:'center'
