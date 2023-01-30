@@ -151,7 +151,6 @@ on the core dao chain.</Typography>
             color:' #949494',
             fontSize:'18px',
             lineHeight:'20px',
-            opacity:0.7,
             fontWeight:'200',
             textAlign:{
                 xs:'left',
@@ -805,7 +804,7 @@ alignItems:{
 <Typography sx={{
     color:'#ECEBEF',
     fontSize:{
-        xs:'12px',
+        xs:'15px',
         md:'16px'
     },
     fontWeight:'400'
