@@ -151,7 +151,6 @@ on the core dao chain.</Typography>
             color:' #949494',
             fontSize:'18px',
             lineHeight:'20px',
-            color:'#fff',
             opacity:0.7,
             fontWeight:'200',
             textAlign:{
