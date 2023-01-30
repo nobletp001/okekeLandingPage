@@ -33,7 +33,7 @@ paddingTop:{
 <Stack sx={{
     paddingRight:1
 }}>
-    <img src="../image/logo.png"  />
+    <img src="../image/logo.png" alt='logo'  />
 </Stack>
 <Typography  sx={{
     fontSize:'20px',
