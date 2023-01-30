@@ -1,7 +1,7 @@
-import { Box, Button, CssBaseline, Paper, Stack, Typography, useTheme } from '@mui/material'
+import { Box, Button, CssBaseline, Stack, Typography, useTheme } from '@mui/material'
 import React from 'react'
 import Grid from '@mui/material/Grid';
-import { maxWidth } from '@mui/system';
+
 function Page() {
     const theme = useTheme()
   return (
