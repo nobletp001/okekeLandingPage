@@ -27,6 +27,10 @@ function Header() {
     color:'#fff',
     fontWeight:'400',
     cursor:'pointer',
+    display:{
+        xs:'none',
+        md:'inline-block'
+    }
    
 }}>
 Crest Protocol
