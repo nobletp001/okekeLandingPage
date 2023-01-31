@@ -10,7 +10,7 @@ function BgImage() {
       marginY:10,
       display:{
         xs:'none',
-        md:'block'
+        md:'flex'
       }
      }}>
      <img src="../image/bg.png" style={{
