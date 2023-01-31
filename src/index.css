@@ -20,3 +20,8 @@ text-fill-color: transparent;
 .fade{
   color:'#fff !important'
 }
+.bgColor{
+
+  border: 1px solid  #E07614;
+  /* border-image-source:  linear-gradient(93.36deg, #E07614 -20.74%, #FEC625 128.78%); */
+}
