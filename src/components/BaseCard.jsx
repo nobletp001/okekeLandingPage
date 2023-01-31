@@ -3,7 +3,9 @@ import React from 'react'
 
 function BaseCard() {
   return (
-    <Stack sx={{
+    <Stack 
+    id="feature"
+    sx={{
         width:'100%',
         height:{
             xs:'auto',

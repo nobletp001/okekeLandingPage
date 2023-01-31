@@ -5,9 +5,44 @@ import CloseIcon from '@mui/icons-material/Close';
 function Header() {
     const theme = useTheme()
     const [closeNav, setcloseNav] = React.useState(false);
+const handleAbout =()=>{
+    const element = document.getElementById('about')
+    if(element){
+        element.scrollIntoView({
+            behavior:'smooth'
+        })
+    }
+}
+const RoadMapFunc =()=>{
+    const element = document.getElementById('roadmap')
+    if(element){
+        element.scrollIntoView({
+            behavior:'smooth'
+        })
+    }
+}
+const FeatureFunc =()=>{
+    const element = document.getElementById('feature')
+    if(element){
+        element.scrollIntoView({
+            behavior:'smooth'
+        })
+    }
+}
+
+const NavFunc =()=>{
+    const element = document.getElementById('nav')
+    if(element){
+        element.scrollIntoView({
+            behavior:'smooth'
+        })
+    }
+}
+
   return (
 <>
-<Stack  direction='row' alignItems="center" justifyContent="space-between" sx={{
+
+<Stack  id="nav" direction='row' alignItems="center" justifyContent="space-between" sx={{
         height:'90px',
         width:'100%',
         backgroundColor:theme.main.navColor,
@@ -19,7 +54,9 @@ function Header() {
         borderRadius:'20px'
     }}>
 <Stack direction="row" alignItems="center" justifyContent='center'>
-<Stack sx={{
+<Stack 
+onClick={NavFunc}
+sx={{
     paddingRight:1
 }}>
     <img src="../image/logo.png" alt='logo'  />
@@ -40,6 +77,7 @@ Crest Protocol
 </Typography>
 </Stack>
 <Typography 
+onClick={handleAbout}
 sx={{
     fontSize:'20px',
     lineHeight:'24px',
@@ -51,7 +89,10 @@ sx={{
         xs:'none'
     }
 }}>About</Typography>
-<Typography  sx={{
+<Typography 
+onClick={RoadMapFunc}
+
+sx={{
     fontSize:'20px',
     lineHeight:'24px',
     color:'#fff',
@@ -62,7 +103,10 @@ sx={{
         xs:'none'
     }
 }}>Roadmap</Typography>
-<Typography  sx={{
+<Typography 
+onClick={FeatureFunc}
+
+sx={{
     fontSize:'20px',
     lineHeight:'24px',
     color:'#fff',
@@ -149,6 +193,10 @@ Launch Dapp
 
  }}>
 <Typography 
+onClick={()=>{
+    handleAbout()
+    setcloseNav(!closeNav)
+}}
 sx={{
     fontSize:'20px',
     lineHeight:'24px',
@@ -159,6 +207,10 @@ sx={{
 }}>About</Typography>
 
 <Typography 
+onClick={()=>{
+    RoadMapFunc()
+    setcloseNav(!closeNav)
+}}
 sx={{
     fontSize:'20px',
     lineHeight:'24px',
@@ -168,6 +220,10 @@ sx={{
     padding:2
 }}>Roadmap</Typography>
 <Typography 
+onClick={()=>{
+    FeatureFunc()
+    setcloseNav(!closeNav)
+}}
 sx={{
     fontSize:'20px',
     lineHeight:'24px',

@@ -12,9 +12,16 @@ import BaseCard from '../components/BaseCard';
 import FooterSection from '../components/Footer';
 import BgImage from '../components/BgImage';
 import RoadMap from '../components/RoadMap';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 function Page() {
     const theme = useTheme()
+    const handleTo =()=>{
+      window.scrollTo({
+        behavior:'smooth',
+        top:0
+      })
+    }
   return (
    <Box sx={{
 backgroundColor:theme.main.bgBlack,
@@ -29,6 +36,18 @@ paddingTop:{
     md:4
 }
    }}>
+    <ArrowUpwardIcon
+    onClick={handleTo}
+  sx={{
+    color:'#fff',
+    fontSize:'2.5rem',
+    position:'fixed',
+    bottom:0,
+    right:10,
+    cursor:'pointer',
+    zIndex:1000
+}}
+/>
     <CssBaseline/>
   <Header/>
   <Title/>

@@ -4,6 +4,7 @@ import { Stack, Typography,  } from '@mui/material'
 function Title() {
   return (
     <Stack 
+    id="about"
     sx={{
         width:'100%',
         diplay:'flex',
