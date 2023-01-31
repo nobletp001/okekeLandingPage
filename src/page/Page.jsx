@@ -11,6 +11,7 @@ import RoundedCard from '../components/RoundedCard';
 import BaseCard from '../components/BaseCard';
 import FooterSection from '../components/Footer';
 import BgImage from '../components/BgImage';
+import RoadMap from '../components/RoadMap';
 
 function Page() {
     const theme = useTheme()
@@ -50,6 +51,7 @@ paddingTop:{
 
 <RoundedCard/>
 <BaseCard/>
+<RoadMap/>
 <FooterSection/>
 
     </Stack>

@@ -31,3 +31,25 @@ text-fill-color: transparent;
 
   /* border-image-source:  linear-gradient(93.36deg, #E07614 -20.74%, #FEC625 128.78%); */
 }
+.list{
+  
+font-family: 'Lexend';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 167.5%;
+color: #4D4D4D;
+/* or 34px */
+}
+
+.listActive{
+  font-family: 'Lexend';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 167.5%;
+/* or 34px */
+
+
+color: #FFFFFF;
+}

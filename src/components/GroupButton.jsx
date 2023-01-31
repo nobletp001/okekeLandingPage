@@ -16,6 +16,7 @@ sx={{
 <Button  size="large" variant="outlined" sx={{
   borderRadius:'11px',
    border:'1px solid rgba(255, 255, 255, 0.21)',
+   backgroundColor:"#1E1E1E",
 width:'47%',
 height:"68px",
 ':hover':{

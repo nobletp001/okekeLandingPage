@@ -15,7 +15,7 @@ function GridCard() {
      <Grid item xs={12} md={3}>
        <Stack  sx={{
         height:'222px',
-       backgroundColor:'#1B181A',
+       backgroundColor:'#1E1E1E',
         width:'100%',
         borderRadius:'9px',
         padding:2

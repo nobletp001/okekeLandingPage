@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button,  Stack, Typography, useTheme} from '@mui/material'
-
+import MenuIcon from '@mui/icons-material/Menu';
 function Header() {
     const theme = useTheme()
   return (
@@ -94,7 +94,15 @@ Launch Dapp
     </Typography>
     </Button>
 
-
+<MenuIcon  sx={{
+    color:'#fff',
+    fontSize:'2.5rem',
+    display:{
+        xs:'inline-block',
+        md:'none'
+    },
+    cursor:'pointer'
+}}/>
     </Stack>
   )
 }

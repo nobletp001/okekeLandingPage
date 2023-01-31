@@ -14,6 +14,10 @@ function BaseCard() {
         borderRadius:'24px',
         marginX:10,
         paddingY:5,
+        marginTop:{
+            xs:10,
+            md:0
+        },
         marginBottom:4,
         display:'flex',
         flexDirection:'column',

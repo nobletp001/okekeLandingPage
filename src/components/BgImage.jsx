@@ -5,7 +5,7 @@ function BgImage() {
   return (
     <Stack sx={{
       width:500,
-      height:300,
+      height:200,
       // backgroundColor:'#fff'
       marginY:10,
       display:{
@@ -13,7 +13,7 @@ function BgImage() {
         md:'flex'
       }
      }}>
-     <img src="../image/bg.png" style={{
+     <img src="../image/Backgroung.png" style={{
       // objectPosition:'center',
       objectFit:"cover"
      }} alt="bg"  h="100%" w="100%" />
