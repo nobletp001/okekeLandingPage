@@ -56,8 +56,9 @@ function BaseCard() {
       
     }}>
     <Button 
+    className='borderColor'
      sx={{
-        border: '1px solid #FEC625',
+        border: '1px solid',
         backgroundColor:'#231B16',
         maxWidth:150,
     borderRadius:'9px'
@@ -77,8 +78,10 @@ function BaseCard() {
         </Typography>
         </Button>
         <Button 
+    className='borderColor'
+
      sx={{
-        border: '1px solid #FEC625',
+        border: '1px solid',
         backgroundColor:'#231B16',
         maxWidth:200,
     borderRadius:'9px'
@@ -99,8 +102,10 @@ function BaseCard() {
         </Typography>
         </Button>
         <Button 
+    className='borderColor'
+
      sx={{
-        border: '1px solid #FEC625',
+        border: '1px solid ',
         backgroundColor:'#231B16',
         maxWidth:200,
     borderRadius:'9px'
@@ -121,8 +126,10 @@ function BaseCard() {
         </Typography>
         </Button>
         <Button 
+    className='borderColor'
+
      sx={{
-        border: '1px solid #FEC625',
+        border: '1px solid ',
         backgroundColor:'#231B16',
         maxWidth:200,
     borderRadius:'9px'
@@ -143,8 +150,10 @@ function BaseCard() {
         </Typography>
         </Button>
         <Button 
+    className='borderColor'
+
      sx={{
-        border: '1px solid #FEC625',
+        border: '1px solid ',
         backgroundColor:'#231B16',
         maxWidth:200,
     borderRadius:'9px'
@@ -165,8 +174,10 @@ function BaseCard() {
         </Typography>
         </Button>
         <Button 
+    className='borderColor'
+
      sx={{
-        border: '1px solid #FEC625',
+        border: '1px solid ',
         backgroundColor:'#231B16',
        width:{
         md:'auto',

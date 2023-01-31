@@ -86,7 +86,10 @@ sx={{
     padding:5
 }}>Seamless and user-friendly experience for discovering and accessing decentralized service</Typography>
 </Stack>
-<Stack sx={{
+<Stack  
+className="bgColor"
+
+sx={{
     width:'221px',
     height:'260px',
     backgroundColor:'#1B181A',
@@ -96,7 +99,7 @@ sx={{
     right:-60,
     top:200,
    padding:2,
-   border:'0.5px solid #E07614'
+  
 }}>
   <Stack sx={{
     width:'44px',
@@ -122,7 +125,10 @@ sx={{
     padding:5
 }}>Enabling the decentralized web to reach its full potential</Typography>
 </Stack>
-<Stack sx={{
+<Stack
+className="bgColor"
+
+sx={{
     width:'221px',
     height:'260px',
     backgroundColor:'#1B181A',
@@ -132,7 +138,7 @@ sx={{
     left:-60,
     top:200,
    padding:2,
-   border:'0.5px solid #E07614'
+
 }}>
   <Stack sx={{
     width:'44px',
@@ -159,7 +165,10 @@ sx={{
 }}>Increased security through decentralized ownership and control of domain names</Typography>
 </Stack>
 
-<Stack sx={{
+<Stack 
+className="bgColor"
+
+sx={{
     width:'221px',
     height:'260px',
     backgroundColor:'#1B181A',
@@ -169,7 +178,7 @@ sx={{
     right:250,
     bottom:-90,
    padding:2,
-   border:'0.5px solid #E07614'
+
 }}>
   <Stack sx={{
     width:'44px',
@@ -209,13 +218,16 @@ sx={{
     marginBottom:2
 }}>
   <Grid item xs={12}>
-  <Stack sx={{
+  <Stack
+className="bgColor"
+  
+  sx={{
     width:'100%',
     height:'260px',
     backgroundColor:'#1B181A',
     borderRadius:'9px',
    padding:2,
-   border:'0.5px solid #E07614'
+ 
 }}>
     <Stack sx={{
     width:'44px',
@@ -243,13 +255,16 @@ sx={{
 </Stack>
   </Grid>
   <Grid item xs={12}>
-  <Stack sx={{
+  <Stack  
+className="bgColor"
+  
+  sx={{
     width:'100%',
     height:'260px',
     backgroundColor:'#1B181A',
     borderRadius:'9px',
    padding:2,
-   border:'0.5px solid #E07614'
+ 
 }}>
    <Stack sx={{
     width:'44px',
@@ -277,13 +292,16 @@ sx={{
 </Stack>
   </Grid>
   <Grid item xs={12}>
-  <Stack sx={{
+  <Stack  
+className="bgColor"
+  
+  sx={{
     width:'100%',
     height:'260px',
     backgroundColor:'#1B181A',
     borderRadius:'9px',
    padding:2,
-   border:'0.5px solid #E07614'
+ 
 }}>
     <Stack sx={{
     width:'44px',
@@ -311,13 +329,17 @@ sx={{
 </Stack>
   </Grid>
   <Grid item xs={12}>
-  <Stack sx={{
+  <Stack 
+  
+className="bgColor"
+  
+  sx={{
     width:'100%',
     height:'260px',
     backgroundColor:'#1B181A',
     borderRadius:'9px',
    padding:2,
-   border:'0.5px solid #E07614'
+  
 }}>
      <Stack sx={{
     width:'44px',

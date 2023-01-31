@@ -20,8 +20,14 @@ text-fill-color: transparent;
 .fade{
   color:'#fff !important'
 }
+
+.borderColor{
+  border-color: rgba(254, 198, 37, 0.7) !important;
+}
 .bgColor{
 
-  border: 1px solid  #E07614;
+  border: 1px solid  ;
+  border-color: rgba(254, 198, 37, 0.7) !important;
+
   /* border-image-source:  linear-gradient(93.36deg, #E07614 -20.74%, #FEC625 128.78%); */
 }
