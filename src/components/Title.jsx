@@ -20,10 +20,7 @@ sx={{
     color:'#fff',
     fontSize:'48px',
     lineHeight:'60px',
-    textAlign:{
-        xs:'left',
-        md:'center'
-    },
+    textAlign:'center',
     fontWeight:'400',
     width:{
         xs:'100%',

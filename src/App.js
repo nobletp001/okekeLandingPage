@@ -4,7 +4,7 @@ import Page from './page/Page';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 const theme = createTheme({
 main:{
-  bgBlack:' #1E1E1E',
+  bgBlack:'#000',
   navColor:'#161215'
 }
 
