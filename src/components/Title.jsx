@@ -21,7 +21,7 @@ sx={{
     fontSize:'48px',
     lineHeight:'60px',
     textAlign:'center',
-    fontWeight:'400',
+    fontWeight:'bold',
     width:{
         xs:'100%',
         md:'67%'
