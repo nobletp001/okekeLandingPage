@@ -2,9 +2,8 @@ import React from 'react'
 import { Button,  Stack, Typography, useTheme} from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-function Header() {
+function Header({closeNav, setcloseNav}) {
     const theme = useTheme()
-    const [closeNav, setcloseNav] = React.useState(false);
 const handleAbout =()=>{
     const element = document.getElementById('about')
     if(element){

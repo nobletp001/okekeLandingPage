@@ -1,7 +1,7 @@
 import React from 'react'
 import { Stack, Typography,  } from '@mui/material'
 
-function Title() {
+function Title({closeNav}) {
   return (
     <Stack 
     id="about"
@@ -12,7 +12,7 @@ function Title() {
         flexWrap:'wrap',
         alignItems:'center',
         marginTop:{
-            xs:10,
+            xs: closeNav?0: 10,
             md:15
         }
     }}>

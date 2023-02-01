@@ -15,6 +15,8 @@ import RoadMap from '../components/RoadMap';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
 function Page() {
+  const [closeNav, setcloseNav] = React.useState(false);
+
     const theme = useTheme()
     const handleTo =()=>{
       window.scrollTo({
@@ -49,8 +51,8 @@ paddingTop:{
 }}
 />
     <CssBaseline/>
-  <Header/>
-  <Title/>
+  <Header closeNav={closeNav} setcloseNav={setcloseNav} />
+  <Title closeNav={closeNav} />
   <SmallTitle/>
     <Stack  sx={{
         width:'100%',
