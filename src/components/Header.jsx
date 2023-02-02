@@ -2,6 +2,8 @@ import React from 'react'
 import { Button,  Stack, Typography, useTheme} from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import { toast } from 'react-toastify';
+
 function Header({closeNav, setcloseNav}) {
     const theme = useTheme()
 const handleAbout =()=>{
@@ -117,7 +119,21 @@ sx={{
     }
 }}>Features</Typography>
 
-<Button   variant="outlined" sx={{
+<Button 
+
+onClick={()=>{
+    toast.info('Coming soon!', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+}}
+variant="outlined" sx={{
    border:'1px solid rgba(255, 255, 255, 0.21)',
  display:{
         md:'block',
@@ -187,7 +203,7 @@ Launch Dapp
     alignItems:'center',
     backgroundColor:theme.main.navColor,
     borderRadius:'20px',
-    animation: closeNav ? '5s ease 5s slidein' :'5s linear 20s slideout'
+    animation: closeNav ? '5s ease 5s slidein' :'5s linear 20s slideout',
    
 
  }}>
@@ -232,7 +248,22 @@ sx={{
     padding:2
 }}>Features</Typography>
 
-<Button   variant="outlined" sx={{
+<Button 
+onClick={()=>{
+    toast.info('Coming soon!', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+}}
+
+
+variant="outlined" sx={{
    border:'1px solid rgba(255, 255, 255, 0.21)',
 
     ":hover":{
