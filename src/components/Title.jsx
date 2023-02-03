@@ -1,5 +1,6 @@
 import React from 'react'
 import { Stack, Typography,  } from '@mui/material'
+import { motion } from 'framer-motion'
 
 function Title({closeNav}) {
   return (
@@ -17,6 +18,11 @@ function Title({closeNav}) {
         }
     }}>
 <Typography 
+component={motion.div}
+initial={{ x:-100,   }}
+whileInView={{ x:0 }}
+viewport={{ }}
+transition={{ ease: "easeOut", duration: 1 }}
 sx={{
     color:'#fff',
     fontSize:'48px',

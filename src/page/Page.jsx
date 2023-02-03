@@ -13,9 +13,10 @@ import FooterSection from '../components/Footer';
 import BgImage from '../components/BgImage';
 import RoadMap from '../components/RoadMap';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-
+import { motion } from 'framer-motion';
 function Page() {
   const [closeNav, setcloseNav] = React.useState(false);
+  const ref = React.useRef(null);
 
     const theme = useTheme()
     const handleTo =()=>{
@@ -25,7 +26,10 @@ function Page() {
       })
     }
   return (
-   <Box sx={{
+   <Box
+   ref={ref}
+   component={motion.div}
+   sx={{
 backgroundColor:theme.main.bgBlack,
 width:'100%',
 minHeight:'100vh',

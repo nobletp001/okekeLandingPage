@@ -3,7 +3,7 @@ import { Button,  Stack, Typography, useTheme} from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import { toast } from 'react-toastify';
-
+import { AnimatePresence, motion } from 'framer-motion';
 function Header({closeNav, setcloseNav}) {
     const theme = useTheme()
 const handleAbout =()=>{
@@ -191,101 +191,111 @@ Launch Dapp
 }
     </Stack>
     
- <Stack sx={{
-    width:'100%',
-    height:'auto',
-    display:{
-        xs:closeNav ?'flex':'none',
-        md:'none'
-    },
-    justifyContent:'center',
-    flexDirection:'column' ,
-    alignItems:'center',
-    backgroundColor:theme.main.navColor,
-    borderRadius:'20px',
-    animation: closeNav ? '5s ease 5s slidein' :'5s linear 20s slideout',
+<AnimatePresence existBeforeEnter>
+{
+    closeNav &&<Stack 
+    component={motion.div}
+    initial={{ y: "-100%" }}
+    animate={{ y: 0 }}
+    exit={{ y: "-100%" }}
+    transition={{ ease: "easeOut", duration: 0.3 }}
+    sx={{
+       width:'100%',
+       height:'auto',
+       display:{
+           xs:closeNav ?'flex':'flex',
+           md:'none'
+       },
+       justifyContent:'center',
+       flexDirection:'column' ,
+       alignItems:'center',
+       backgroundColor:theme.main.navColor,
+       borderRadius:'20px',
+      
+      
    
+    }}>
+   <Typography 
+   onClick={()=>{
+       handleAbout()
+       setcloseNav(!closeNav)
+   }}
+   sx={{
+       fontSize:'20px',
+       lineHeight:'24px',
+       color:'#fff',
+       fontWeight:'400',
+       cursor:'pointer',
+       padding:2
+   }}>About</Typography>
+   
+   <Typography 
+   onClick={()=>{
+       RoadMapFunc()
+       setcloseNav(!closeNav)
+   }}
+   sx={{
+       fontSize:'20px',
+       lineHeight:'24px',
+       color:'#fff',
+       fontWeight:'400',
+       cursor:'pointer',
+       padding:2
+   }}>Roadmap</Typography>
+   <Typography 
+   onClick={()=>{
+       FeatureFunc()
+       setcloseNav(!closeNav)
+   }}
+   sx={{
+       fontSize:'20px',
+       lineHeight:'24px',
+       color:'#fff',
+       fontWeight:'400',
+       cursor:'pointer',
+       padding:2
+   }}>Features</Typography>
+   
+   <Button 
+   onClick={()=>{
+       toast.info('Coming soon!', {
+           position: "top-right",
+           autoClose: 2000,
+           hideProgressBar: false,
+           closeOnClick: true,
+           pauseOnHover: true,
+           draggable: true,
+           progress: undefined,
+           theme: "light",
+           });
+   }}
+   
+   
+   variant="outlined" sx={{
+      border:'1px solid rgba(255, 255, 255, 0.21)',
+   
+       ":hover":{
+           border:'1px solid rgba(255, 255, 255, 0.21)',
+       },
+   height:'43px',
+   borderRadius:'8px',
+   margin:2
+   }}>
+       <Typography  sx={{
+       fontSize:'20px',
+       lineHeight:'24px',
+       color:'#fff',
+       fontWeight:'400',
+      textTransform:'capitalize',
+      backgroundColor:"transparent",
+   }}>
+   Launch Dapp
+       </Typography>
+       </Button>
+    </Stack>
+}
 
- }}>
-<Typography 
-onClick={()=>{
-    handleAbout()
-    setcloseNav(!closeNav)
-}}
-sx={{
-    fontSize:'20px',
-    lineHeight:'24px',
-    color:'#fff',
-    fontWeight:'400',
-    cursor:'pointer',
-    padding:2
-}}>About</Typography>
-
-<Typography 
-onClick={()=>{
-    RoadMapFunc()
-    setcloseNav(!closeNav)
-}}
-sx={{
-    fontSize:'20px',
-    lineHeight:'24px',
-    color:'#fff',
-    fontWeight:'400',
-    cursor:'pointer',
-    padding:2
-}}>Roadmap</Typography>
-<Typography 
-onClick={()=>{
-    FeatureFunc()
-    setcloseNav(!closeNav)
-}}
-sx={{
-    fontSize:'20px',
-    lineHeight:'24px',
-    color:'#fff',
-    fontWeight:'400',
-    cursor:'pointer',
-    padding:2
-}}>Features</Typography>
-
-<Button 
-onClick={()=>{
-    toast.info('Coming soon!', {
-        position: "top-right",
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        });
-}}
-
-
-variant="outlined" sx={{
-   border:'1px solid rgba(255, 255, 255, 0.21)',
-
-    ":hover":{
-        border:'1px solid rgba(255, 255, 255, 0.21)',
-    },
-height:'43px',
-borderRadius:'8px',
-margin:2
-}}>
-    <Typography  sx={{
-    fontSize:'20px',
-    lineHeight:'24px',
-    color:'#fff',
-    fontWeight:'400',
-   textTransform:'capitalize',
-   backgroundColor:"transparent",
-}}>
-Launch Dapp
-    </Typography>
-    </Button>
- </Stack>
-
+</AnimatePresence>
  
 </>
   )
